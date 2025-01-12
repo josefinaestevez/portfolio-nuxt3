@@ -1,13 +1,5 @@
 <template>
   <nav id="nav-bar" class="navPadding" :class="navBgTextColor" style="height: 70px">
-    <div class="lg:w-1/12">
-      <Transition appear name="fadeIn">
-        <NuxtLink v-if="!loading" href="/" class="home-button" aria-label="YZ.">
-          <!-- <img :src="logo" width="40" height="40" alt="favicon" loading="lazy" /> -->
-          <!-- <p>YZ.</p> -->
-        </NuxtLink>
-      </Transition>
-    </div>
     <div v-if="!loading" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
         <NuxtLink v-for="(item, index) in navigation" :key="item.id" :data-index="index" :href="item.href"
@@ -15,14 +7,6 @@
       </TransitionGroup>
     </div>
     <div class="lg:w-1/12 flex items-center justify-end gap-4">
-      <div class="ml-5 flex items-center">
-        <button type="button" aria-label="theme toggle" @click="toggleTheme()">
-          <!-- <Transition name="fade" mode="out-in"> -->
-          <SunIcon v-if="!enabled" class="w-5 h-5" />
-          <MoonIcon v-else class="w-5 h-5">Dark mode</MoonIcon>
-          <!-- </Transition> -->
-        </button>
-      </div>
       <Menu as="div" class="mobile-hamburger">
         <div class="menu-button">
           <MenuButton aria-label="Menu">
@@ -51,7 +35,7 @@
 </template>
 <script setup>
 import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/vue";
-import { Bars3Icon, MoonIcon, SunIcon } from "@heroicons/vue/24/outline";
+import { Bars3Icon } from "@heroicons/vue/24/outline";
 import { gsap } from "gsap";
 import blackWhiteFavicon from "/favicon-bw.png";
 import whiteBlackFavicon from "/favicon-wb.png";
@@ -68,30 +52,30 @@ useHead({
   ],
 });
 
-const { enabled, toggleTheme } = useTheme();
-// const route = useRoute();
-// const { scrollTop } = useScrollToTop();
-// const { trackNavBarPosition, currentOffsetHeight } = useTrackNavBar();
-const { trackTransitionCompleted, transitionCompletedOnce } =
-  useTransitionTracking();
-const { navigation } = useConstants();
+const { trackTransitionCompleted, transitionCompletedOnce } = useTransitionTracking();
+// TODO: create projects section
+const navigation = [
+    {
+      id: 1,
+      name: "About",
+      href: "/about",
+    },
+    {
+      id: 2,
+      name: "Skills",
+      href: "/skills",
+    },
+    {
+      id: 3,
+      name: "Contact",
+      href: "/contact",
+    },
+];
+
 let loading = ref(transitionCompletedOnce.value ? false : true);
-// const screenHeight = ref(0);
-// const heightOfNav = ref(0);
-// const currentScreenWidth = ref(0);
+
 const navBgTextColor = ref("bg-black text-white");
 const logo = ref(whiteBlackFavicon);
-
-// const trackScroll = () => {
-//   trackNavBarPosition("nav-bar");
-// };
-// const goToHome = () => {
-//   if (route.path !== "/") {
-//     window.location.href = "/";
-//   } else {
-//     scrollTop();
-//   }
-// };
 
 // animation
 const before = (el) => {
@@ -99,6 +83,7 @@ const before = (el) => {
     opacity: 0,
   });
 };
+
 const entering = (el, done) => {
   gsap.to(el, {
     opacity: 1,
@@ -112,11 +97,8 @@ const entering = (el, done) => {
 watchEffect(() => {
   navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
   logo.value = blackWhiteFavicon;
-
-  if (enabled.value) {
-    logo.value = whiteBlackFavicon;
-  }
 });
+
 onMounted(() => {
   loading.value = false;
   setTimeout(() => {

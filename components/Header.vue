@@ -31,7 +31,6 @@
   </header>
 </template>
 <script setup>
-// const loading = ref(true);
 const columns = ref([]);
 const counter = ref(0);
 const numOfColumns = ref(4);
@@ -45,7 +44,7 @@ const contentContainerDelay = ref(2500);
 const showBgImg = ref(false);
 const showContent = ref(false);
 const isMobile = ref(false);
-const { enabled } = useTheme();
+
 const { transitionCompletedOnce } = useTransitionTracking();
 
 const i = ref(0);
@@ -91,41 +90,21 @@ const typeWriter = () => {
 const assignDelayAmount = () => {
   if (window.innerWidth < 500) {
     isMobile.value = true;
-    if (enabled.value) {
-      contentContainerDelay.value = 800;
-      typeWriterDelay.value = 1100;
-    } else {
-      rectangDelay.value = 0;
-      contentContainerDelay.value = 1200;
-      typeWriterDelay.value = 1500;
-    }
+    rectangDelay.value = 0;
+    contentContainerDelay.value = 1200;
+    typeWriterDelay.value = 1500;
   } else {
-    if (enabled.value) {
-      rectangDelay.value = 0;
-      contentContainerDelay.value = transitionCompletedOnce.value ? 800 : 2100;
-      typeWriterDelay.value = transitionCompletedOnce.value ? 1100 : 2400;
-    } else {
-      rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300;
-      contentContainerDelay.value = transitionCompletedOnce.value ? 1200 : 2500;
-      typeWriterDelay.value = transitionCompletedOnce.value ? 1500 : 2800;
-    }
+    rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300;
+    contentContainerDelay.value = transitionCompletedOnce.value ? 1200 : 2500;
+    typeWriterDelay.value = transitionCompletedOnce.value ? 1500 : 2800;
   }
 };
 
 const triggerRevealBackground = () => {
-  if (counter.value === 4 && !enabled.value) {
+  if (counter.value === 4) {
     setTimeout(() => {
       showBgImg.value = true;
     }, 200);
-  } else if (enabled.value) {
-    const delay = transitionCompletedOnce.value
-      ? 300
-      : isMobile.value
-      ? 500
-      : 1200;
-    setTimeout(() => {
-      showBgImg.value = true;
-    }, delay);
   }
 };
 
