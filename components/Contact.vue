@@ -32,7 +32,7 @@
             <a href="mailto:josefinaestevez91@gmail.com"> <EnvelopeIcon /> Say Hello! </a>
             <a
               v-if="isSeeking"
-              href="/resume/my-resume.pdf"
+              href="/resume/CV_2025.pdf"
               download="resume_poyizhi"
               target="_blank"
             >

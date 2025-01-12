@@ -6,6 +6,7 @@
         :key="`rectang-${index}`"
         :style="rectang"
       ></div>
+      <!-- TODO: change background !-->
       <img
         :class="showBgImg ? 'opacity-100' : 'opacity-0'"
         key="home-background-image"
@@ -25,7 +26,7 @@
           introObj.lineTwo
         }}</span>
         <br />
-        <span class="text-xl md:text-2xl">{{ introObj.lineThree }}</span>
+        <span class="text-xl md:text-xl">{{ introObj.lineThree }}</span>
       </h1>
     </div>
   </header>
