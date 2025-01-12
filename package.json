@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "eazypau-porfolio",
+  "name": "josefinaestevez-porfolio",
   "author": {
-    "name": "Po Yi Zhi",
-    "url": "https://eazypau.com/"
+    "name": "Josefina Estevez",
+    "url": "https://josefinaestevez.com/"
   },
   "scripts": {
     "dev": "nuxi dev",

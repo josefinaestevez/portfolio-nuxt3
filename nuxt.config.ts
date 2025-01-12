@@ -23,7 +23,7 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Josefina Estevez, Yi Zhi, eazypau, Malaysia",
+            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Josefina Estevez",
         },
         // social meta tags
         {
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         },
         {
           property: "og:site",
-          content: "https://www.eazypau.com/",
+          content: "https://www.josefinaestevez.com/",
         },
         {
           property: "og:title",
@@ -46,7 +46,7 @@ export default defineNuxtConfig({
         // sharing thumbmail img
         {
           property: "og:image",
-          content: "https://www.eazypau.com/favicon-bw.png", ///favicon-wb.png
+          content: "https://www.josefinaestevez.com/favicon-bw.png", ///favicon-wb.png
         },
         // google site verification
         // {
