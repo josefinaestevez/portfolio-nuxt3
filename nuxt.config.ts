@@ -49,10 +49,10 @@ export default defineNuxtConfig({
           content: "https://www.eazypau.com/favicon-bw.png", ///favicon-wb.png
         },
         // google site verification
-        {
-          name: "google-site-verification",
-          content: "CpKqeACrIS7JLwdilAnMgoDicJnoBaNmupPoq6fUtFs",
-        },
+        // {
+        //   name: "google-site-verification",
+        //   content: "CpKqeACrIS7JLwdilAnMgoDicJnoBaNmupPoq6fUtFs",
+        // },
       ],
       link: [{ rel: "icon", href: "/favicon-bw.png" }],
     },
