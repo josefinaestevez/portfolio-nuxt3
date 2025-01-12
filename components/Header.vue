@@ -1,16 +1,5 @@
 <template>
   <header class="headerHeight">
-    <!-- <div>
-      <img
-        src="/wide-laptop-gradient-bg.webp"
-        sizes="(max-width: 768px) 50vw, (max-width: 1024px) 80vw, (max-width: 1439px) 100vw"
-        srcset="
-          /wide-laptop-gradient-bg-min.webp  768w,
-          /wide-laptop-gradient-bg.webp     1024w
-        "
-        alt="laptop with black background"
-      />
-    </div> -->
     <TransitionGroup name="list" tag="div" class="header-bg">
       <div
         v-for="(rectang, index) in columns"
@@ -67,9 +56,9 @@ const introObj = ref({
   lineThree: "",
 });
 const intro = [
-  "Po Yi Zhi",
-  "Software Engineer in Renalworks",
-  "I specialise in building web app that helps to solve real world challenges.",
+  "Josefina Estevez",
+  "Software Engineer",
+  "Passionate developer with extensive experience building web applications, microservices, and shared libraries.",
 ];
 
 const addColumns = () => {
@@ -156,8 +145,6 @@ onMounted(() => {
   setTimeout(() => {
     typeWriter();
   }, typeWriterDelay.value);
-  // loading.value = false;
-  // Promise.all([addSquare(), typeWriter()]);
 });
 </script>
 <style lang="scss" scoped>

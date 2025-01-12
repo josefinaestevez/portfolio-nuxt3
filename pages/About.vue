@@ -5,7 +5,7 @@ useHead({
   meta: [
     {
       property: "og:site",
-      content: "https://www.eazypau.com/about",
+      content: "https://www.josefinaestevez.com/about",
     },
   ],
 });
@@ -19,21 +19,9 @@ useHead({
         <section>
           <h2>About</h2>
           <p class="mt-2">
-            Hi there! I'm a self-taught developer with a background in
-            mechanical engineering (graduated from Multimedia University). After
-            discovering my passion for web development, I made a career change
-            and became a frontend web developer. Currently working as a Software
-            Engineer in
-            <a
-              class="font-bold text-blue-700 dark:text-blue-400 hover:underline"
-              href="https://renalworks.com/"
-              >Renalworks</a
-            >.
-          </p>
-          <p class="mt-2">
-            I'm passionate in learning new technologies, building responsive
-            websites, and documenting my working process when it comes to
-            complicated features.
+            Passionate developer with extensive experience building web applications, microservices, and shared libraries. 
+            Adept at leading projects, collaborating across departments, and engaging with diverse stakeholders. 
+            Skilled in prioritizing, organizing, and scoping tasks to drive efficient project delivery.
           </p>
           <p class="mt-2">
             Here are a few technologies I've been working with recently:
@@ -42,15 +30,11 @@ useHead({
           <div class="flex gap-10 mt-2 pl-3">
             <ul>
               <li>JavaScript</li>
-              <li>React</li>
-              <li>NextJs</li>
-              <li>Vue</li>
+              <li>NuxtJS</li>
             </ul>
             <ul>
               <li>TypeScript</li>
-              <li>Redux</li>
-              <li>Material UI</li>
-              <li>jQuery</li>
+              <li>VueJS</li>
             </ul>
           </div>
         </section>
@@ -60,7 +44,10 @@ useHead({
           <CardsCareer v-for="career in timeline" :career-details="career" />
         </section>
 
-        <HobbySection :hobbies="hobbies" />
+        <!-- 
+        TODO: Add hobbies
+        <HobbySection :hobbies="hobbies" /> 
+        -->
       </div>
     </div>
   </NuxtLayout>

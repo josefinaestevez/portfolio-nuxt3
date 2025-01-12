@@ -1,5 +1,5 @@
 <template>
-  <section id="skills">
+  <section id="skills" class="h-max">
     <div>
       <h2 class="techTitle">Technologies & Framework</h2>
     </div>

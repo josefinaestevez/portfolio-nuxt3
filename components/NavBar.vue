@@ -3,8 +3,8 @@
     <div class="lg:w-1/12">
       <Transition appear name="fadeIn">
         <NuxtLink v-if="!loading" href="/" class="home-button" aria-label="YZ.">
-          <img :src="logo" width="40" height="40" alt="favicon" loading="lazy" />
-          <p>YZ.</p>
+          <!-- <img :src="logo" width="40" height="40" alt="favicon" loading="lazy" /> -->
+          <!-- <p>YZ.</p> -->
         </NuxtLink>
       </Transition>
     </div>
@@ -110,49 +110,14 @@ const entering = (el, done) => {
 };
 
 watchEffect(() => {
-  // if (route.path === "/") {
-  //   if (currentScreenWidth.value <= 640) {
-  //     if (
-  //       currentOffsetHeight.value >
-  //       screenHeight.value + heightOfNav.value / 2
-  //     ) {
-  //       // navbar style change on desktop view
-  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-  //       logo.value = blackWhiteFavicon;
-  //     } else {
-  //       navBgTextColor.value = "bg-black text-white";
-  //       logo.value = whiteBlackFavicon;
-  //     }
-  //   } else {
-  //     if (
-  //       currentOffsetHeight.value >
-  //       screenHeight.value - heightOfNav.value / 2
-  //     ) {
-  //       // navbar style change on desktop view
-  //       navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
-  //       logo.value = blackWhiteFavicon;
-  //     } else {
-  //       navBgTextColor.value = "bg-black text-white";
-  //       logo.value = whiteBlackFavicon;
-  //     }
-  //   }
-  // } else {
   navBgTextColor.value = "bg-white text-black dark:bg-[#121212]";
   logo.value = blackWhiteFavicon;
-  // }
+
   if (enabled.value) {
     logo.value = whiteBlackFavicon;
   }
 });
 onMounted(() => {
-  // track nav bar position on initial render
-  // trackScroll();
-  // use scroll event to update the current position of nav bar
-  // window.addEventListener("scroll", trackScroll);
-  // const navigationBar = document.getElementById("nav-bar");
-  // screenHeight.value = window.innerHeight;
-  // heightOfNav.value = navigationBar ? navigationBar.offsetHeight : 0;
-  // currentScreenWidth.value = window.innerWidth;
   loading.value = false;
   setTimeout(() => {
     trackTransitionCompleted();

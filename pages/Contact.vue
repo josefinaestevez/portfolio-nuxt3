@@ -12,14 +12,14 @@ useHead({
     },
     {
       property: "og:site",
-      content: "https://www.eazypau.com/contact",
+      content: "https://www.josefinaestevez.com/contact",
     },
   ],
 });
 </script>
 <template>
   <NuxtLayout name="default">
-    <div class="bg-white dark:bg-[#121212]">
+    <div>
       <Contact id="contact" />
     </div>
   </NuxtLayout>

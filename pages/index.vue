@@ -2,25 +2,25 @@
 const jsonLd = {
   "@context": "https://schema.org/",
   "@type": "WebSite",
-  name: "Web Developer Portfolio | Po Yi Zhi",
+  name: "Software Engineer Portfolio | Josefina Estevez",
   author: {
     "@type": "Person",
-    "@id": "#poyizhi",
+    "@id": "#josefinaestevez",
   },
-  url: "https://www.eazypau.com/",
+  url: "https://www.josefinaestevez.com/",
   description:
-    "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+    "Personal Portfolio Website. Hi, I am Josefina Estevez. I'm a Software Engineer based in Barcelona, Spain.",
   keywords:
-    "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, eazypau, Malaysia",
-  image: "https://www.eazypau.com/profile-pics/profile.webp",
+    "Web Developer, Front End Developer, Frontend Developer, Senior Web Developer, Software Developer, Software Engineer",
+  image: "https://www.josefinaestevez.com/profile-pics/profile.webp",
 };
 const personJson = {
   "@context": "https://schema.org/",
   "@type": "Person",
-  "@id": "#poyizhi",
-  name: "Po Yi Zhi",
-  email: "poyizhi@gmail.com",
-  url: "https://www.eazypau.com/",
+  "@id": "#josefinaestevez",
+  name: "Josefina Estevez",
+  email: "josefinaestevez91@gmail.com",
+  url: "https://www.josefinaestevez.com/",
 };
 useHead({
   script: [

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Web Developer Portfolio | Po Yi Zhi",
+      title: "Web Developer Portfolio | Josefina Estevez",
       meta: [
         {
           name: "viewport",
@@ -16,19 +16,19 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+            "Personal Portfolio Website. Hi, I am Josefina Estevez. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         { name: "format-detection", content: "telephone=no" },
-        { property: "author", content: "Po Yi Zhi" },
+        { property: "author", content: "Josefina Estevez" },
         {
           name: "keywords",
           content:
-            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Po Yi Zhi, Yi Zhi, eazypau, Malaysia",
+            "Web Developer, Front End Developer, Frontend Developer, Junior Web Developer, Software Developer, Software Engineer, Josefina Estevez, Yi Zhi, eazypau, Malaysia",
         },
         // social meta tags
         {
           property: "og:site_name",
-          content: "Web Developer Portfolio | Po Yi Zhi",
+          content: "Web Developer Portfolio | Josefina Estevez",
         },
         {
           property: "og:site",
@@ -36,12 +36,12 @@ export default defineNuxtConfig({
         },
         {
           property: "og:title",
-          content: "Web Developer Portfolio | Po Yi Zhi",
+          content: "Web Developer Portfolio | Josefina Estevez",
         },
         {
           property: "og:description",
           content:
-            "Personal Portfolio Website. Hi, I am Po Yi Zhi. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
+            "Personal Portfolio Website. Hi, I am Josefina Estevez. I'm a Front-End Web Developer based in Kuala Lumpur, Malaysia. Currently focused on developing website using Vue and React. Checkout my projects and github repositories",
         },
         // sharing thumbmail img
         {

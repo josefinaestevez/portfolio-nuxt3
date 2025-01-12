@@ -14,20 +14,30 @@ const props = defineProps({
   >
     <div class="w-full absolute -top-10">
       <img
+        v-if="careerDetails.logo"
         :src="careerDetails.logo"
         :alt="careerDetails.companyName"
-        :style="`border-color: ${careerDetails.logoBorderColor};`"
-        class="w-20 rounded-full border mx-auto"
+        class="w-20 rounded-full border mx-auto company-logo"
       />
     </div>
     <div class="p-5">
       <h3>{{ careerDetails.companyName }}</h3>
+      <p class="duration">{{ careerDetails.location }}</p>
       <p class="duration">{{ careerDetails.duration }}</p>
       <ul class="mt-3">
         <li v-for="item in careerDetails.jobScope" :key="item">
           {{ item }}
         </li>
       </ul>
+      <p class="mt-3">💻 Technologies: {{ careerDetails.techStack.join(", ") }}</p>
     </div>
   </div>
 </template>
+<style scoped>
+.company-logo {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 70px;
+  height: 70px;
+  border-color: #f8f9fa;
+}
+</style>

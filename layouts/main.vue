@@ -1,9 +1,6 @@
 <template>
   <div>
     <NavBar />
-    <!-- <SideNavigation right-link="/about" :show-left-link="false">
-      <slot />
-    </SideNavigation> -->
     <slot />
   </div>
 </template>
@@ -27,10 +24,6 @@ useHead({
     {
       type: "text/javascript",
       innerHTML: gtag,
-    },
-    {
-      type: "text/javascript",
-      src: "js/useCopy.js",
     },
   ],
 });
