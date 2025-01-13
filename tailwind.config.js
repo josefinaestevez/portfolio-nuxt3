@@ -9,14 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // TODO: find better images
       backgroundImage: {
-        tea: "url('/hobbies/tea-cup.webp')",
-        blog: "url('/hobbies/myblog.webp')",
-        music:
-          "url('/hobbies/negative-space-headphones-black-white-corey-blaz.webp')",
-        grocer: "url('/hobbies/grocer.webp')",
-        journaling: "url('/hobbies/journaling.webp')",
-        programming: "url('/hobbies/programming.webp')",
+        music: "url('/hobbies/music.webp')",
+        travel: "url('/hobbies/travel.jpg')",
+        veggie: "url('/hobbies/veggie.jpeg')",
+        family: "url('/hobbies/family.webp')",
       },
       minWidth: {
         sm: "20rem",

@@ -1,26 +1,26 @@
 <script setup>
-// const hobbies = [
-//   {
-//     title: "Drink Black tea",
-//     text: "Best way to start the morning",
-//     classBg: "bg-tea",
-//   },
-//   {
-//     title: "Journaling",
-//     text: "To pen down my thoughts, memories and interesting things that occur in life",
-//     classBg: "bg-journaling",
-//   },
-//   {
-//     title: "Learning new technologies/framework",
-//     text: "To explore and expand my skillsets. \n Recently exploring Kotlin and ThreeJs",
-//     classBg: "bg-programming",
-//   },
-//   {
-//     title: "Listening to music",
-//     text: "Recent favourites: MWAM, HONNE, Forester, Milet and Yoasobi",
-//     classBg: "bg-music",
-//   },
-// ];
+const hobbies = [
+  {
+    title: "Music",
+    text: "Producing electronic music and DJing are my creative outlets, where I experiment with beats and sounds.",
+    classBg: "bg-music",
+  },
+  {
+    title: "Veggie Food",
+    text: "Cooking and discovering delicious vegetarian dishes that are both healthy and satisfying.",
+    classBg: "bg-veggie",
+  },
+  {
+    title: "Family and Friends",
+    text: "Spending quality time with loved ones, sharing laughs, and creating unforgettable memories.",
+    classBg: "bg-family",
+  },
+  {
+    title: "Travel",
+    text: "Exploring new places, cultures, and cuisines is my favorite way to recharge and gain new perspectives.",
+    classBg: "bg-travel",
+  },
+];
 
 const timeline = [
   {
@@ -155,10 +155,7 @@ useHead({
           <CardsCareer v-for="career in timeline" :career-details="career" />
         </section>
 
-        <!-- 
-        TODO: Add hobbies
-        <HobbySection :hobbies="hobbies" /> 
-        -->
+        <HobbySection :hobbies="hobbies" />        
       </div>
     </div>
   </NuxtLayout>
