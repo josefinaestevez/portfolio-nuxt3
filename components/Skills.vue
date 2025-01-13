@@ -1,7 +1,7 @@
 <template>
   <section id="skills">
     <div>
-      <h2 class="techTitle">Technologies & Framework</h2>
+      <h2 class="techTitle">Technologies & Frameworks</h2>
     </div>
     <ul>
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
@@ -34,9 +34,6 @@ onMounted(() => {
       trigger: ".techTitle",
       start: "-50px center",
       end: "top center",
-      // markers: true,
-      // toggleActions: "restart pause reverse pause",
-      // scrub: 1, // scrub is use set the amount of time to catch up, it kinda looks the scroll animation with ur scroller
     },
   });
   titleTl
@@ -50,7 +47,6 @@ onMounted(() => {
   ScrollTrigger.batch(".skillStyle", {
     start: "-160px center",
     end: "top center",
-    // markers: true,
     onEnter: (batch) => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
   });
 });

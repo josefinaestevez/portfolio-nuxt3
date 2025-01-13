@@ -24,26 +24,10 @@ const props = defineProps({
   },
 });
 onMounted(() => {
-  // let titleTl = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: ".hobbyTitle",
-  //     start: "-40px center",
-  //     end: "top center",
-  //     // markers: true,
-  //   },
-  // });
-  // titleTl
-  //   .addLabel("start")
-  //   .from(".hobbyTitle", { opacity: 0, translateX: "-100px" })
-  //   .addLabel("entering")
-  //   .to(".hobbyTitle", { opacity: 1, translateX: "0px", duration: 0.5 })
-  //   .addLabel("end");
-
   gsap.set(".hobby-card-container", { opacity: 0, y: 20 });
   ScrollTrigger.batch(".hobby-card-container", {
     start: "-250px center",
     end: "-100px center",
-    // markers: true,
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.15 }),
   });

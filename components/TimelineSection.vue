@@ -40,7 +40,6 @@ onMounted(() => {
       trigger: ".timeline-title",
       start: "-60px center",
       end: "top center",
-      // markers: true,
     },
   });
   titleTl
@@ -54,7 +53,6 @@ onMounted(() => {
   ScrollTrigger.batch(".timeline-item", {
     start: "-150px center",
     end: "top center",
-    // markers: true,
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, x: 0, autoAlpha: 1, stagger: 0.15 }),
   });
