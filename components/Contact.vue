@@ -33,7 +33,7 @@
             <a
               v-if="isSeeking"
               href="/resume/CV_2025.pdf"
-              download="resume_poyizhi"
+              download="resume_josefina"
               target="_blank"
             >
               <PaperClipIcon /> My Resume
