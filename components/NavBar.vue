@@ -2,8 +2,7 @@
   <nav id="nav-bar" class="navPadding" :class="navBgTextColor" style="height: 70px">
     <div v-if="!loading" class="nav-links">
       <TransitionGroup appear @before-enter="before" @enter="entering">
-        <NuxtLink v-for="(item, index) in navigation" :key="item.id" :data-index="index" :href="item.href"
-          class="underAnimation">{{ item.name }}</NuxtLink>
+        <NuxtLink v-for="(item, index) in navigation" :key="item.id" :data-index="index" :href="item.href" class="underAnimation">{{ item.name }}</NuxtLink>
       </TransitionGroup>
     </div>
     <div class="lg:w-1/12 flex items-center justify-end gap-4">
@@ -123,7 +122,7 @@ onMounted(() => {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: #22d3ee;
+  background-color: #b45380;
   /* #3cefff */
   transform-origin: bottom right;
   transform: scaleX(0);
