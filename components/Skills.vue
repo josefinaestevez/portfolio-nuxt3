@@ -1,11 +1,12 @@
 <template>
-  <section id="skills" class="h-max">
+  <section id="skills">
     <div>
       <h2 class="techTitle">Technologies & Framework</h2>
     </div>
     <ul>
       <li v-for="skill in skillSet" :key="skill" class="skillStyle">
         <img
+          class="p-3 m-auto"
           :src="skill.imgUrl"
           :alt="skill.alt"
           :width="skill.width"
