@@ -53,7 +53,7 @@ useHead({
 });
 
 const { trackTransitionCompleted, transitionCompletedOnce } = useTransitionTracking();
-// TODO: create projects section
+
 const navigation = [
     {
       id: 1,
@@ -67,6 +67,11 @@ const navigation = [
     },
     {
       id: 3,
+      name: "Projects",
+      href: "/projects",
+    },
+    {
+      id: 4,
       name: "Contact",
       href: "/contact",
     },

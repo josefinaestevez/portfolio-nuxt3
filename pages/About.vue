@@ -155,7 +155,7 @@ useHead({
           <CardsCareer v-for="career in timeline" :career-details="career" />
         </section>
 
-        <HobbySection :hobbies="hobbies" />        
+        <Hobbies :hobbies="hobbies" />        
       </div>
     </div>
   </NuxtLayout>
