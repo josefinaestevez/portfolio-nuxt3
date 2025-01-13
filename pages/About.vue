@@ -25,7 +25,7 @@
 const timeline = [
   {
     logo: "/work/block-white.gif",
-    companyName: "TIDAL (Block)",
+    companyName: "<a class='underline-offset-2' href='https://tidal.com/' target='_blank'>TIDAL</a> (<a href='https://block.xyz/' target='_blank'>Block</a>)",
     location: "Barcelona, Spain (Remote)",
     duration: "May 2022 - December 2024",
     jobScope: [
@@ -44,7 +44,7 @@ const timeline = [
   {
     logo: "/work/bmat.jpeg",
     location: "Barcelona, Spain",
-    companyName: "BMAT Music Innovators",
+    companyName: "<a href='https://www.bmat.com/' target='_blank'>BMAT Music Innovators</a>",
     duration: "May 2019 - May 2022",
     jobScope: [
       "Partnered with the VP to define project priorities and steer the team toward successful execution.",
@@ -64,7 +64,7 @@ const timeline = [
     logo: "/work/devsar.jpeg",
     location: "La Plata, Argentina",
     logoBorderColor: "#7303C0",
-    companyName: "DevsAr (Acquired after by Ripio)",
+    companyName: "DevsAr (Acquired after by <a href='https://www.ripio.com/' target='_blank'>Ripio</a>)",
     duration: "May 2016 - July 2019",
     jobScope: [
       "Delivered diverse projects, including Torchweb (a platform for molecular design) and Find Your Trainer (a fitness marketplace).",

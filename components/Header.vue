@@ -6,11 +6,10 @@
         :key="`rectang-${index}`"
         :style="rectang"
       ></div>
-      <!-- TODO: change background !-->
       <img
         :class="showBgImg ? 'opacity-100' : 'opacity-0'"
         key="home-background-image"
-        src="/red-blue.jpg"
+        src="/smokey-background.jpg"
         width="1920"
         height="1280"
         alt="blue red fusion"

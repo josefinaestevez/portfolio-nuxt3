@@ -21,7 +21,7 @@ const props = defineProps({
       />
     </div>
     <div class="p-5">
-      <h3>{{ careerDetails.companyName }}</h3>
+      <h3 v-html="careerDetails.companyName"></h3>
       <p class="duration">{{ careerDetails.location }}</p>
       <p class="duration">{{ careerDetails.duration }}</p>
       <ul class="mt-3">
