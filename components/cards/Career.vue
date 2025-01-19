@@ -1,12 +1,14 @@
 <script setup>
-const props = defineProps({
+import { defineProps } from 'vue';
+
+defineProps({
   careerDetails: {
     type: Object,
     default() {
-      return {}
+      return {};
     },
   },
-})
+});
 </script>
 <template>
   <div

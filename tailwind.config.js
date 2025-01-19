@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   darkMode: ['class', '[data-theme="dark"]'],
   content: [
     './components/**/*.{vue,js}',
@@ -37,4 +37,4 @@ module.exports = {
       },
     },
   },
-}
+};

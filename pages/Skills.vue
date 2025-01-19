@@ -1,4 +1,6 @@
 <script setup>
+import { useHead } from 'vue';
+
 const skills = [
   {
     imgUrl: '/skills/javascript.svg',
@@ -84,7 +86,7 @@ const skills = [
     width: 150,
     height: 150,
   },
-]
+];
 useHead({
   title: 'Web Developer Portfolio | Skills',
   meta: [
@@ -101,7 +103,7 @@ useHead({
       content: 'https://www.josefinaestevez.com/skills',
     },
   ],
-})
+});
 </script>
 <template>
   <NuxtLayout name="default">

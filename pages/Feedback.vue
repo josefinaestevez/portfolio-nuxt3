@@ -54,7 +54,7 @@ const feedback = [
     feedback: 'Great support from the (user) front-end team!',
     givenAt: new Date('2022-10-13'),
   },
-]
+];
 </script>
 <template>
   <NuxtLayout name="default">
@@ -68,7 +68,8 @@ const feedback = [
       <div class="container mt-8 px-6">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <CardsFeedback
-            v-for="feedbackEntry in feedback"
+            v-for="(feedbackEntry, index) in feedback"
+            :key="index"
             :feedback="feedbackEntry"
           />
         </div>

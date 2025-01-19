@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineNuxtConfig } from 'nuxt/config';
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -69,4 +69,4 @@ export default defineNuxtConfig({
       NUXT_GTM_ID: process.env.NUXT_GTM_ID,
     },
   },
-})
+});

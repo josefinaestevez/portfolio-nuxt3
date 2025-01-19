@@ -57,11 +57,13 @@
   </nav>
 </template>
 <script setup>
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
-import { Bars3Icon } from '@heroicons/vue/24/outline'
-import { gsap } from 'gsap'
-import blackWhiteFavicon from '/favicon-bw.png'
-import whiteBlackFavicon from '/favicon-wb.png'
+import { useHead, ref, watchEffect, onMounted } from 'vue';
+import { gsap } from 'gsap';
+import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
+import { Bars3Icon } from '@heroicons/vue/24/outline';
+import blackWhiteFavicon from '/favicon-bw.png';
+import whiteBlackFavicon from '/favicon-wb.png';
+import { useTransitionTracking } from '@/composables/useTransitionTracking';
 
 useHead({
   script: [
@@ -73,10 +75,10 @@ useHead({
     }`,
     },
   ],
-})
+});
 
 const { trackTransitionCompleted, transitionCompletedOnce } =
-  useTransitionTracking()
+  useTransitionTracking();
 
 const navigation = [
   {
@@ -99,19 +101,19 @@ const navigation = [
     name: 'Contact',
     href: '/contact',
   },
-]
+];
 
-let loading = ref(transitionCompletedOnce.value ? false : true)
+let loading = ref(transitionCompletedOnce.value ? false : true);
 
-const navBgTextColor = ref('bg-black text-white')
-const logo = ref(whiteBlackFavicon)
+const navBgTextColor = ref('bg-black text-white');
+const logo = ref(whiteBlackFavicon);
 
 // animation
 const before = (el) => {
   gsap.set(el, {
     opacity: 0,
-  })
-}
+  });
+};
 
 const entering = (el, done) => {
   gsap.to(el, {
@@ -120,20 +122,20 @@ const entering = (el, done) => {
     duration: 0.8,
     delay: el.dataset.index * 0.2,
     onComplete: done,
-  })
-}
+  });
+};
 
 watchEffect(() => {
-  navBgTextColor.value = 'bg-white text-black dark:bg-[#121212]'
-  logo.value = blackWhiteFavicon
-})
+  navBgTextColor.value = 'bg-white text-black dark:bg-[#121212]';
+  logo.value = blackWhiteFavicon;
+});
 
 onMounted(() => {
-  loading.value = false
+  loading.value = false;
   setTimeout(() => {
-    trackTransitionCompleted()
-  }, 3000)
-})
+    trackTransitionCompleted();
+  }, 3000);
+});
 </script>
 <style lang="scss" scoped>
 .underAnimation {
