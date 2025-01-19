@@ -55,22 +55,22 @@ const { trackTransitionCompleted, transitionCompletedOnce } = useTransitionTrack
 
 const navigation = [
     {
-      id: 1,
       name: "About",
       href: "/about",
     },
     {
-      id: 2,
+      name: "Feedback",
+      href: "/feedback",
+    },
+    {
       name: "Skills",
       href: "/skills",
     },
     {
-      id: 3,
       name: "Projects",
       href: "/projects",
     },
     {
-      id: 4,
       name: "Contact",
       href: "/contact",
     },
