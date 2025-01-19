@@ -29,7 +29,9 @@
             </p>
           </div>
           <div>
-            <a href="mailto:josefinaestevez91@gmail.com"> <EnvelopeIcon /> Say Hello! </a>
+            <a href="mailto:josefinaestevez91@gmail.com">
+              <EnvelopeIcon /> Say Hello!
+            </a>
             <a
               v-if="isSeeking"
               href="/resume/CV_2025.pdf"
@@ -45,6 +47,6 @@
   </section>
 </template>
 <script setup>
-import { EnvelopeIcon, PaperClipIcon } from "@heroicons/vue/24/outline";
-const isSeeking = true;
+import { EnvelopeIcon, PaperClipIcon } from '@heroicons/vue/24/outline'
+const isSeeking = true
 </script>

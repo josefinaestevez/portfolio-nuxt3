@@ -23,7 +23,11 @@
           <IconsLinkedInIcon />
         </a>
 
-        <a href="https://github.com/josefinaestevez" aria-label="Github" target="blank">
+        <a
+          href="https://github.com/josefinaestevez"
+          aria-label="Github"
+          target="blank"
+        >
           <IconsGithubIcon />
         </a>
 

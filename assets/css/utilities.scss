@@ -1,19 +1,19 @@
 // reference from: https://www.developerdrive.com/how-to-easily-use-google-fonts-with-sass/
 // @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"); // looks slightly distorted in chrome
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 // mixins
 @mixin sub-font-family {
   // font-family: 'Lato', sans-serif;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 @mixin header-font {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 @mixin logo-font {
-  font-family: "Carter One", cursive;
+  font-family: 'Carter One', cursive;
 }
 @mixin sub-title {
   @apply text-3xl lg:text-4xl text-center font-bold text-gray-800;

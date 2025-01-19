@@ -9,22 +9,22 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 export default defineComponent({
   props: {
     title: {
       type: String,
-      default: "title",
+      default: 'title',
     },
     content: {
       type: String,
-      default: "content",
+      default: 'content',
     },
     classBg: {
       type: String,
-      default: "bg-gray-200",
+      default: 'bg-gray-200',
     },
   },
   setup() {},
-});
+})
 </script>

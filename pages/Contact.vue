@@ -1,21 +1,21 @@
 <script setup>
 useHead({
-  title: "Web Developer Portfolio | Contact",
+  title: 'Web Developer Portfolio | Contact',
   meta: [
     {
-      property: "og:title",
-      content: "Web Developer Portfolio | Contact",
+      property: 'og:title',
+      content: 'Web Developer Portfolio | Contact',
     },
     {
-      property: "og:site_name",
-      content: "Web Developer Portfolio | Contact",
+      property: 'og:site_name',
+      content: 'Web Developer Portfolio | Contact',
     },
     {
-      property: "og:site",
-      content: "https://www.josefinaestevez.com/contact",
+      property: 'og:site',
+      content: 'https://www.josefinaestevez.com/contact',
     },
   ],
-});
+})
 </script>
 <template>
   <NuxtLayout name="default">

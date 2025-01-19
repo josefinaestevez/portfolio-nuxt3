@@ -3,10 +3,10 @@ const props = defineProps({
   careerDetails: {
     type: Object,
     default() {
-      return {};
+      return {}
     },
   },
-});
+})
 </script>
 <template>
   <div
@@ -29,7 +29,9 @@ const props = defineProps({
           {{ item }}
         </li>
       </ul>
-      <p class="mt-3">💻 Technologies: {{ careerDetails.techStack.join(", ") }}</p>
+      <p class="mt-3">
+        💻 Technologies: {{ careerDetails.techStack.join(', ') }}
+      </p>
     </div>
   </div>
 </template>
