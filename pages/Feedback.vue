@@ -65,7 +65,7 @@ const feedback = [
         Read what colleagues, clients, and partners have to say about working
         together.
       </p>
-      <div class="container mt-8 px-6">
+      <div class="container mt-8 px-6 mr-auto ml-auto">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <CardsFeedback
             v-for="feedbackEntry in feedback"

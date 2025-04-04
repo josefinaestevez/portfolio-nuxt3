@@ -80,6 +80,10 @@ const { trackTransitionCompleted, transitionCompletedOnce } =
 
 const navigation = [
   {
+    name: 'Home',
+    href: '/',
+  },
+  {
     name: 'About',
     href: '/about',
   },

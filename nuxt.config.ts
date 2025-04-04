@@ -57,16 +57,22 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', href: '/favicon-bw.png' }],
     },
   },
+
   modules: ['@nuxtjs/tailwindcss'],
+
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.scss',
   },
+
   build: {
     transpile: ['gsap', '@headlessui/vue', '@heroicons/vue'],
   },
+
   runtimeConfig: {
     public: {
       NUXT_GTM_ID: process.env.NUXT_GTM_ID,
     },
   },
+
+  compatibilityDate: '2025-04-04',
 })
