@@ -14,24 +14,22 @@
   </section>
 </template>
 <script setup>
-import gsap from 'gsap';
-import { defineProps, onMounted } from 'vue';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-defineProps({
+const props = defineProps({
   hobbies: {
     type: Array,
     default: () => [],
   },
-});
-
+})
 onMounted(() => {
-  gsap.set('.hobby-card-container', { opacity: 0, y: 20 });
+  gsap.set('.hobby-card-container', { opacity: 0, y: 20 })
   ScrollTrigger.batch('.hobby-card-container', {
     start: '-250px center',
     end: '-100px center',
     onEnter: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, autoAlpha: 1, stagger: 0.15 }),
-  });
-});
+  })
+})
 </script>

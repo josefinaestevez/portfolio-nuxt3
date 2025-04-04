@@ -31,103 +31,100 @@
   </header>
 </template>
 <script setup>
-import { ref, watchEffect, onMounted } from 'vue';
-import { useTransitionTracking } from '@/composables/useTransitionTracking';
+const columns = ref([])
+const counter = ref(0)
+const numOfColumns = ref(4)
+const currentLeftPosition = ref(20)
+const width = 2
+const typeSpeed = 50
+const columnSpeed = 100
+const rectangDelay = ref(1300)
+const typeWriterDelay = ref(2800)
+const contentContainerDelay = ref(2500)
+const showBgImg = ref(false)
+const showContent = ref(false)
+const isMobile = ref(false)
 
-const columns = ref([]);
-const counter = ref(0);
-const numOfColumns = ref(4);
-const currentLeftPosition = ref(20);
-const width = 2;
-const typeSpeed = 50;
-const columnSpeed = 100;
-const rectangDelay = ref(1300);
-const typeWriterDelay = ref(2800);
-const contentContainerDelay = ref(2500);
-const showBgImg = ref(false);
-const showContent = ref(false);
-const isMobile = ref(false);
+const { transitionCompletedOnce } = useTransitionTracking()
 
-const { transitionCompletedOnce } = useTransitionTracking();
-
-const i = ref(0);
-const j = ref(0);
+const i = ref(0)
+const j = ref(0)
 const introObj = ref({
   lineOne: '',
   lineTwo: '',
   lineThree: '',
-});
+})
 const intro = [
   'Josefina Estevez',
   'Software Engineer',
   'Passionate developer with extensive experience building web applications, microservices, and shared libraries.',
-];
+]
 
 const addColumns = () => {
   if (counter.value < numOfColumns.value) {
-    const positionY = 0;
-    const styling = `height: 100%; width: ${width}%; top: ${positionY}; left: ${currentLeftPosition.value}%`;
-    columns.value.push(styling);
-    currentLeftPosition.value += 20;
-    counter.value++;
-    setTimeout(addColumns, columnSpeed);
+    const positionY = 0
+    const styling = `height: 100%; width: ${width}%; top: ${positionY}; left: ${currentLeftPosition.value}%`
+    columns.value.push(styling)
+    currentLeftPosition.value += 20
+    counter.value++
+    setTimeout(addColumns, columnSpeed)
   }
-};
+}
 
 const typeWriter = () => {
   const currentLine =
-    j.value === 0 ? 'lineOne' : j.value === 1 ? 'lineTwo' : 'lineThree';
+    j.value === 0 ? 'lineOne' : j.value === 1 ? 'lineTwo' : 'lineThree'
   if (j.value < 3) {
     if (i.value < intro[j.value].length) {
-      introObj.value[currentLine] += intro[j.value][i.value];
-      i.value++;
-      setTimeout(typeWriter, typeSpeed);
+      introObj.value[currentLine] += intro[j.value][i.value]
+      i.value++
+      setTimeout(typeWriter, typeSpeed)
     } else {
-      if (j.value < 2) i.value = 0;
-      j.value++;
-      if (j.value < 3) setTimeout(typeWriter, typeSpeed);
+      if (j.value < 2) i.value = 0
+      j.value++
+      if (j.value < 3) setTimeout(typeWriter, typeSpeed)
     }
   }
-};
+}
 
 const assignDelayAmount = () => {
   if (window.innerWidth < 500) {
-    isMobile.value = true;
-    rectangDelay.value = 0;
-    contentContainerDelay.value = 1200;
-    typeWriterDelay.value = 1500;
+    isMobile.value = true
+    rectangDelay.value = 0
+    contentContainerDelay.value = 1200
+    typeWriterDelay.value = 1500
   } else {
-    rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300;
-    contentContainerDelay.value = transitionCompletedOnce.value ? 1200 : 2500;
-    typeWriterDelay.value = transitionCompletedOnce.value ? 1500 : 2800;
+    rectangDelay.value = transitionCompletedOnce.value ? 0 : 1300
+    contentContainerDelay.value = transitionCompletedOnce.value ? 1200 : 2500
+    typeWriterDelay.value = transitionCompletedOnce.value ? 1500 : 2800
   }
-};
+}
 
 const triggerRevealBackground = () => {
   if (counter.value === 4) {
     setTimeout(() => {
-      showBgImg.value = true;
-    }, 200);
+      showBgImg.value = true
+    }, 200)
   }
-};
+}
 
 watchEffect(() => {
-  triggerRevealBackground();
-});
+  triggerRevealBackground()
+})
 
 onMounted(() => {
-  assignDelayAmount();
+  assignDelayAmount()
   setTimeout(() => {
-    addColumns();
-  }, rectangDelay.value);
-  triggerRevealBackground();
+    addColumns()
+  }, rectangDelay.value)
+  triggerRevealBackground()
   setTimeout(() => {
-    showContent.value = true;
-  }, contentContainerDelay.value);
+    showContent.value = true
+  }, contentContainerDelay.value)
   setTimeout(() => {
-    typeWriter();
-  }, typeWriterDelay.value);
-});
+    typeWriter()
+  }, typeWriterDelay.value)
+})
 </script>
 <style lang="scss" scoped>
 .headerHeight {

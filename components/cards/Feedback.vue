@@ -1,29 +1,29 @@
 <script setup lang="ts">
-import { defineProps } from 'vue';
-import type { FeedbackEntry, Author } from '~/types';
+import { defineProps } from 'vue'
+import type { FeedbackEntry, Author } from '~/types'
 
 defineProps({
   feedback: {
     type: Object as () => FeedbackEntry,
     required: true,
   },
-});
+})
 
 function formatDate(date: Date): string {
   const formatter = new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-  });
-  return formatter.format(date);
+  })
+  return formatter.format(date)
 }
 
 function formatInitials(author: Author): string {
-  return `${author.firstName[0]}${author.lastName[0]}`;
+  return `${author.firstName[0]}${author.lastName[0]}`
 }
 
 function formatName(author: Author): string {
-  return `${author.firstName} ${author.lastName}`;
+  return `${author.firstName} ${author.lastName}`
 }
 </script>
 <template>

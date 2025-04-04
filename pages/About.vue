@@ -1,6 +1,4 @@
 <script setup>
-import { useHead } from 'vue';
-
 const hobbies = [
   {
     title: 'Music',
@@ -22,7 +20,7 @@ const hobbies = [
     text: 'Exploring new places, cultures, and cuisines is my favorite way to recharge and gain new perspectives.',
     classBg: 'bg-travel',
   },
-];
+]
 
 const timeline = [
   {
@@ -105,7 +103,7 @@ const timeline = [
       'JQuery',
     ],
   },
-];
+]
 useHead({
   meta: [
     {
@@ -113,7 +111,7 @@ useHead({
       content: 'https://www.josefinaestevez.com/about',
     },
   ],
-});
+})
 </script>
 <template>
   <NuxtLayout name="default">
@@ -148,11 +146,7 @@ useHead({
 
         <section>
           <h2>Career Timeline</h2>
-          <CardsCareer
-            v-for="(career, index) in timeline"
-            :key="index"
-            :career-details="career"
-          />
+          <CardsCareer v-for="career in timeline" :career-details="career" />
         </section>
 
         <Hobbies :hobbies="hobbies" />

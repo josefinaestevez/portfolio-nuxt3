@@ -1,6 +1,4 @@
 <script setup>
-import { useHead } from 'vue';
-
 const projects = [
   {
     isReverse: true,
@@ -21,7 +19,7 @@ const projects = [
     isUrl: true,
     urlLink: 'https://neptugoods.com/',
   },
-];
+]
 useHead({
   title: 'Web Developer Portfolio | Personal Projects',
   meta: [
@@ -38,7 +36,7 @@ useHead({
       content: 'https://www.josefinaestevez.com/projects',
     },
   ],
-});
+})
 </script>
 <template>
   <NuxtLayout name="default">

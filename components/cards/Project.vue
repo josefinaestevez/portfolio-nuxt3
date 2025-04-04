@@ -95,19 +95,21 @@
   </div>
 </template>
 <script setup>
-import { ref } from 'vue';
-import { TransitionRoot } from '@headlessui/vue';
-
-defineProps({
+import { TransitionRoot } from '@headlessui/vue'
+const props = defineProps({
+  // isReverse: {
+  //   type: Boolean,
+  //   default: false,
+  // },
   projectDetails: {
     type: Object,
     default() {
-      return {};
+      return {}
     },
   },
-});
+})
 
-let hovered = ref(false);
+let hovered = ref(false)
 </script>
 <style lang="scss" scoped>
 .imgContainer {

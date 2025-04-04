@@ -1,6 +1,5 @@
 {
   "private": true,
-  "type": "module",
   "name": "josefinaestevez-porfolio",
   "author": {
     "name": "Josefina Estevez",
@@ -10,21 +9,20 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint --fix .",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
     "format": "prettier --write ."
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "eslint": "^8.57.1",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
     "nuxt": "^3.7.3",
     "prettier": "^3.4.2",
     "sass": "^1.67.0",
-    "sass-loader": "^13.3.2",
-    "typescript-eslint": "^8.20.0"
+    "sass-loader": "^13.3.2"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.16",

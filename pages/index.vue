@@ -1,6 +1,4 @@
 <script setup>
-import { useHead, definePageMeta } from 'vue';
-
 const jsonLd = {
   '@context': 'https://schema.org/',
   '@type': 'WebSite',
@@ -15,8 +13,7 @@ const jsonLd = {
   keywords:
     'Web Developer, Front End Developer, Frontend Developer, Senior Web Developer, Software Developer, Software Engineer',
   image: 'https://www.josefinaestevez.com/profile-pics/profile.webp',
-};
-
+}
 const personJson = {
   '@context': 'https://schema.org/',
   '@type': 'Person',
@@ -24,8 +21,7 @@ const personJson = {
   name: 'Josefina Estevez',
   email: 'josefinaestevez91@gmail.com',
   url: 'https://www.josefinaestevez.com/',
-};
-
+}
 useHead({
   script: [
     {
@@ -37,11 +33,10 @@ useHead({
       type: 'application/ld+json',
     },
   ],
-});
-
+})
 definePageMeta({
   layout: false,
-});
+})
 </script>
 <template>
   <NuxtLayout name="main">

@@ -1,6 +1,4 @@
 <script setup>
-import { useHead } from 'vue';
-
 useHead({
   title: 'Web Developer Portfolio | Contact',
   meta: [
@@ -17,7 +15,7 @@ useHead({
       content: 'https://www.josefinaestevez.com/contact',
     },
   ],
-});
+})
 </script>
 <template>
   <NuxtLayout name="default">

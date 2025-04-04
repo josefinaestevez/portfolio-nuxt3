@@ -47,6 +47,6 @@
   </section>
 </template>
 <script setup>
-import { EnvelopeIcon, PaperClipIcon } from '@heroicons/vue/24/outline';
-const isSeeking = true;
+import { EnvelopeIcon, PaperClipIcon } from '@heroicons/vue/24/outline'
+const isSeeking = true
 </script>
