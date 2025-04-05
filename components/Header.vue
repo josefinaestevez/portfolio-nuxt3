@@ -16,7 +16,7 @@
       />
     </TransitionGroup>
     <div class="content" :class="showContent ? 'opacity-100' : 'opacity-0'">
-      <h1 class="leading-3">
+      <h1 class="leading-3 pt-2 pb-2">
         <span class="text-4xl md:text-5xl font-semibold">{{
           introObj.lineOne
         }}</span>

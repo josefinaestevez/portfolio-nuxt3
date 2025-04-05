@@ -55,6 +55,23 @@ const feedback = [
     givenAt: new Date('2022-10-13'),
   },
 ]
+useHead({
+  title: 'Web Developer Portfolio | Feedback',
+  meta: [
+    {
+      property: 'og:title',
+      content: 'Web Developer Portfolio | Feedback',
+    },
+    {
+      property: 'og:site_name',
+      content: 'Web Developer Portfolio | Feedback',
+    },
+    {
+      property: 'og:site',
+      content: 'https://www.josefinaestevez.com/feedback',
+    },
+  ],
+})
 </script>
 <template>
   <NuxtLayout name="default">
