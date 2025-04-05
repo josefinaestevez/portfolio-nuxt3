@@ -28,7 +28,7 @@ function formatName(author: Author): string {
 </script>
 <template>
   <div
-    class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition duration-300"
+    class="p-8 hover:shadow-2xl relative bg-white dark:bg-[#1c1c1c] border border-white hover:border-gray-600 dark:border-[#1c1c1c] dark:hover:border-white rounded shadow-lg mt-14 transition ease-out duration-300"
   >
     <div class="flex items-center mb-6">
       <div
@@ -37,7 +37,9 @@ function formatName(author: Author): string {
         {{ formatInitials(feedback.author) }}
       </div>
       <div class="ml-4">
-        <h3 class="font-semibold text-xl">{{ formatName(feedback.author) }}</h3>
+        <h3 class="font-semibold text-xl text-gray-500">
+          {{ formatName(feedback.author) }}
+        </h3>
         <p class="text-sm text-gray-500">
           {{ feedback.author.role }} - {{ feedback.author.company }}
         </p>

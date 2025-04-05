@@ -163,6 +163,16 @@ header {
   }
 }
 
+.feedback-section {
+  p {
+    @include sub-font-family;
+    @apply text-gray-700 dark:text-gray-200;
+  }
+  h3 {
+    @apply font-semibold lg:mt-0 dark:text-white;
+  }
+}
+
 // profile section
 .profile-social-icons {
   @apply flex justify-center lg:justify-normal items-center mt-2 -mx-2;

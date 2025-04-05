@@ -75,21 +75,23 @@ useHead({
 </script>
 <template>
   <NuxtLayout name="default">
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-gray-50">
-      <h2>Feedback & Reviews</h2>
-      <p class="text-center mt-4">
-        Read what colleagues, clients, and partners have to say about working
-        together.
-      </p>
-      <div class="container mt-8 px-6 mr-auto ml-auto">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <CardsFeedback
-            v-for="feedbackEntry in feedback"
-            :feedback="feedbackEntry"
-          />
+    <div class="feedback-section">
+      <!-- Testimonials Section -->
+      <section class="py-16">
+        <h2>Feedback & Reviews</h2>
+        <p class="text-center mt-4 px-2">
+          Read what colleagues, clients, and partners have to say about working
+          together.
+        </p>
+        <div class="container mt-8 px-6 mr-auto ml-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <CardsFeedback
+              v-for="feedbackEntry in feedback"
+              :feedback="feedbackEntry"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </NuxtLayout>
 </template>
