@@ -84,6 +84,20 @@ const skills = [
     width: 150,
     height: 150,
   },
+  {
+    imgUrl: '/skills/figma.png',
+    name: 'Figma',
+    alt: 'Figma logo',
+    width: 150,
+    height: 150,
+  },
+  {
+    imgUrl: '/skills/css.png',
+    name: 'CSS',
+    alt: 'CSS logo',
+    width: 150,
+    height: 150,
+  },
 ]
 useHead({
   title: 'Web Developer Portfolio | Skills',

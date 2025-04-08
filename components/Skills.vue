@@ -20,7 +20,6 @@
 </template>
 <script setup>
 import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const props = defineProps({
   skillSet: {
@@ -44,10 +43,12 @@ onMounted(() => {
     .addLabel('end')
 
   gsap.set('.skillStyle', { opacity: 0, y: 20 })
-  ScrollTrigger.batch('.skillStyle', {
-    start: '-160px center',
-    end: 'top center',
-    onEnter: (batch) => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15 }),
+  gsap.to('.skillStyle', {
+    opacity: 1,
+    y: 0,
+    stagger: 0.15,
+    delay: 0.3,
+    onStart: () => console.log('Animación iniciada para skills'),
   })
 })
 </script>
