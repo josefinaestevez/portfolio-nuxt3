@@ -35,7 +35,7 @@
             <a
               v-if="isSeeking"
               href="/resume/CV_2025.pdf"
-              download="resume_josefina"
+              download="CV Josefina 2025 - Software Engineer"
               target="_blank"
             >
               <PaperClipIcon /> My Resume
