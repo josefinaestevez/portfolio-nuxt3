@@ -57,7 +57,7 @@ const introObj = ref({
 const intro = [
   'Josefina Estevez',
   'Software Engineer',
-  'Passionate developer with extensive experience building web applications, microservices, and shared libraries.',
+  'I’ve spent the last few years building web applications, microservices, and internal libraries — but also helping teams stay aligned, scoping features, and keeping projects moving.',
 ]
 
 const addColumns = () => {

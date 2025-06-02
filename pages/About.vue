@@ -123,26 +123,45 @@ useHead({
         <section>
           <h2>About</h2>
           <p class="mt-2">
-            Passionate developer with extensive experience building web
-            applications, microservices, and shared libraries. Adept at leading
-            projects, collaborating across departments, and engaging with
-            diverse stakeholders. Skilled in prioritizing, organizing, and
-            scoping tasks to drive efficient project delivery.
+            I'm a frontend/fullstack developer who loves making things work and
+            making them make sense. I’ve spent the last few years building web
+            applications, microservices, and internal libraries — but also
+            helping teams stay aligned, scoping features, and keeping projects
+            moving.I’ve spent the last few years building web applications,
+            microservices, and internal libraries — but also helping teams stay
+            aligned, scoping features, and keeping projects moving.
           </p>
           <p class="mt-2">
-            Here are a few technologies I've been working with recently:
+            I enjoy roles where I can code, lead, support product decisions, and
+            collaborate closely with design, data, and other teams. Whether it’s
+            building clean UIs or untangling tricky project requirements, I’m
+            all in. Some tools and frameworks I’ve worked with recently:
           </p>
 
           <div class="flex gap-10 mt-2 pl-3">
             <ul>
               <li>JavaScript</li>
-              <li>NuxtJS</li>
+              <li>TypeScript</li>
+              <li>Vue.js</li>
+              <li>Nuxt</li>
+              <li>Node.js</li>
             </ul>
             <ul>
-              <li>TypeScript</li>
-              <li>VueJS</li>
+              <li>Jest</li>
+              <li>Vitest</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>
+                And a healthy dose of debugging, testing, and documentation :)
+              </li>
             </ul>
           </div>
+
+          <p class="mt-2">
+            Currently looking for opportunities where I can keep combining
+            technical work with cross-functional collaboration — ideally within
+            the music industry, which I’d love to stay connected to.
+          </p>
         </section>
 
         <section>
