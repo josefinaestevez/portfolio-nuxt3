@@ -27,12 +27,13 @@ const timeline = [
     logo: '/work/block-white.gif',
     companyName:
       "<a class='underline-offset-2' href='https://tidal.com/' target='_blank'>TIDAL</a> (<a href='https://block.xyz/' target='_blank'>Block</a>)",
+    jobTitle: 'Senior Software Engineer → Level 6 Engineer',
     location: 'Barcelona, Spain (Remote)',
     duration: 'May 2022 - December 2024',
     jobScope: [
-      'L6* engineer leading the development of microservices, shared libraries, and critical projects like login/signup flows, payment integrations, and artist engagement tools.',
-      'Collaborate with cross-functional teams across countries to deliver seamless integrations.',
-      'L6 engineers at Block serve as team leaders, driving medium-to-large features and multi-person efforts that span engineering team boundaries. They provide technical leadership, resolve complex challenges, ensure successful project delivery, and foster collaboration across teams.',
+      'TIDAL is a global music streaming platform owned by Block (formerly Square), a tech company founded by Twitter co-founder Jack Dorsey. TIDAL is known for its high-quality audio and artist-first philosophy.',
+      'As part of the Web Growth team, I worked on user acquisition and activation initiatives, with a focus on improving signup flows, running experiments, and managing technical debt across our core frontend applications. The frontend was built using a microservices architecture, allowing for cross-team ownership and independent deployment of features. I collaborated closely with product, design, backend, QA, and data, and was promoted to Level 6 in recognition of my leadership and cross-functional impact.',
+      'Promoted from Level 5 to Level 6 at Block within 2 years, through a rigorous company-wide promotion process requiring executive-level technical review. Recognized for driving complex initiatives, shaping engineering practices across teams, and consistently delivering high-quality results with organizational impact.',
     ],
     techStack: ['NuxtJS', 'VueJS', 'Express', 'Microservices', 'MongoDB'],
   },
